@@ -1,19 +1,7 @@
-# bloom_token
+# blt_ext
 
-A library for Dart developers. It is awesome.
+A Chrome extension for displaying information about the BloomToken.
 
-## Usage
+Currently it displays information regarding the ICO.
 
-A simple usage example:
-
-    import 'package:bloom_token/bloom_token.dart';
-
-    main() {
-      var awesome = new Awesome();
-    }
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+![image](/assets/screenshot.png)
