@@ -1,0 +1,26 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.4.4/spectre.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  min-height: 100px;
+}
+
+.clip-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app {
+  padding: 10px;
+}
+
+.ticker {
+  margin-top: 10px;
+  background-color: hsla(0,0%,50%,.5);
+}
+
+

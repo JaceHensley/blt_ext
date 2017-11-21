@@ -1,0 +1,20 @@
+name: blt_ext
+version: 1.0.0
+description: Chrome extension for BloomToken
+authors: Jace Hensley <jacehensley@gmail.com>
+homepage: https://github.com/jacehensley/blt_ext
+
+environment:
+  sdk: ^1.24.2
+
+dependencies:
+  chrome: ^0.9.33
+  over_react: ^1.18.1
+  react: ^3.4.3
+
+
+transformers:
+- over_react
+- chrome
+- $dart2js:
+    csp: true
