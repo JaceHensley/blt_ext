@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Fix loading issue
+
 ## 1.1.0
 
 - Update styling

@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:over_react/over_react.dart';
 
 import 'package:blt_ext/src/data.dart';
@@ -36,7 +34,7 @@ class AppComponent extends UiStatefulComponent<AppProps, AppState> {
 
     getEmail().then((email) {
       if (email.isEmpty) {
-        // setState(newState()..loginState = LoginState.needsEmail);
+        setState(newState()..loginState = LoginState.needsEmail);
       } else {
 
         setState(newState()
