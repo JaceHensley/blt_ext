@@ -1,0 +1,24 @@
+@import "spectre.css/src/spectre";
+@import "spectre.css/src/spectre-icons";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 20rem;
+}
+
+.view {
+  &--logged-in {
+    height: 15rem;
+    overflow: scroll;
+  }
+
+  &--needs-email {
+    padding: 3.2rem 1rem;
+  }
+}
+
+
+

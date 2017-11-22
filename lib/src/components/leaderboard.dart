@@ -21,50 +21,42 @@ class LeaderboardComponent extends UiComponent<LeaderboardProps> {
   render() {
     if (props.leaderboardItems.isEmpty) return false;
 
-    var children = []
-      ..add((Dom.h3()..className = 'text-center')('Leaderboard'))
-      ..add(_renderHeader())
-      ..addAll(props.leaderboardItems.map(_renderRow));
-
-    return Dom.div()(
-      children
+    return (Dom.div()..className = 'card')(
+      (Dom.div()..className = 'card-header')(
+        (Dom.div()..className = 'card-title h5')('Leaderboard')
+      ),
+      (Dom.div()..className = 'card-body')(
+        _renderTable()
+      )
     );
   }
-  ReactElement _renderHeader() {
-    return (Dom.div()
-      ..className = 'columns'
-      ..key = 'header'
-    )(
-      (Dom.div()..className = 'column col-3')(
-        'Position'
+
+  ReactElement _renderTable() {
+    return (Dom.table()..className = 'table')(
+      Dom.thead()(
+        Dom.tr()(
+          Dom.th()('Position'),
+          Dom.th()('Email'),
+          Dom.th()('Points'),
+        )
       ),
-      (Dom.div()..className = 'column col-6')(
-        'Email'
-      ),
-      (Dom.div()..className = 'column col-3')(
-        'Points'
-      ),
+      Dom.tbody()(
+        props.leaderboardItems.map(_renderRow)
+      )
     );
   }
 
   ReactElement _renderRow(LeaderboardItem item) {
     var classes = new ClassNameBuilder()
-      ..add('columns')
-      ..add('highlight', item.isSelf);
+      ..add('active', item.isSelf);
 
-    return (Dom.div()
+    return (Dom.tr()
       ..className = classes.toClassName()
       ..key = item.position
     )(
-      (Dom.div()..className = 'column col-3')(
-        item.position
-      ),
-      (Dom.div()..className = 'column col-6 clip-text')(
-        item.email
-      ),
-      (Dom.div()..className = 'column col-3')(
-        item.points
-      ),
+      Dom.td()(item.position),
+      Dom.td()(item.email),
+      Dom.td()(item.points),
     );
   }
 }

@@ -5,3 +5,7 @@ build/
 
 # Directory created by dartdoc
 doc/api/
+
+src.crx
+src.pem
+src.zip

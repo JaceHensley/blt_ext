@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "spectre.css",
+        "scope": null,
+        "escapedName": "spectre.css",
+        "name": "spectre.css",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/jacehensley/workspaces-personal/blt_ext/web"
+    ]
+  ],
+  "_from": "spectre.css@latest",
+  "_id": "spectre.css@0.4.6",
+  "_inCache": true,
+  "_location": "/spectre.css",
+  "_nodeVersion": "6.11.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/spectre.css-0.4.6.tgz_1511160975719_0.31934230914339423"
+  },
+  "_npmUser": {
+    "name": "picturepan2",
+    "email": "picturepan2@hotmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "spectre.css",
+    "scope": null,
+    "escapedName": "spectre.css",
+    "name": "spectre.css",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://npm.workiva.net/spectre.css/-/spectre.css-0.4.6.tgz",
+  "_shasum": "1df98ad1093fae90de6c74879660d59cd029854f",
+  "_shrinkwrap": null,
+  "_spec": "spectre.css",
+  "_where": "/Users/jacehensley/workspaces-personal/blt_ext/web",
+  "author": {
+    "name": "Yan Zhu",
+    "email": "picturepan2@hotmail.com"
+  },
+  "browserslist": [
+    "last 4 Chrome versions",
+    "Edge >= 12",
+    "Firefox ESR",
+    "last 4 Safari versions",
+    "last 4 Opera versions",
+    "Explorer >= 10"
+  ],
+  "bugs": {
+    "url": "https://github.com/picturepan2/spectre/issues"
+  },
+  "dependencies": {},
+  "description": "Spectre.css: a lightweight, responsive and modern CSS framework.",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "latest"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "1df98ad1093fae90de6c74879660d59cd029854f",
+    "tarball": "http://npm.workiva.net/spectre.css/-/spectre.css-0.4.6.tgz"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "src",
+    "**/*.scss",
+    "gulpfile.js"
+  ],
+  "gitHead": "605dbf8b00758c976a02d05724e90dd8871f91f5",
+  "homepage": "http://picturepan2.github.io/spectre",
+  "keywords": [
+    "css",
+    "framework",
+    "flexbox",
+    "responsive",
+    "mobile-friendly",
+    "front-end",
+    "sass",
+    "modern"
+  ],
+  "license": "MIT",
+  "main": "docs/dist/spectre.css",
+  "maintainers": [
+    {
+      "name": "picturepan2",
+      "email": "picturepan2@hotmail.com"
+    }
+  ],
+  "name": "spectre.css",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picturepan2/spectre.git"
+  },
+  "scripts": {},
+  "version": "0.4.6"
+}

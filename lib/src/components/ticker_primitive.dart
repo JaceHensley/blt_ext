@@ -19,7 +19,7 @@ class TickerPrimitiveComponent extends UiComponent<TickerPrimitiveProps> {
   render() {
     var timeLeft = DateTime.parse('2017-11-30').difference(props.currentTime);
 
-    return (Dom.div()..className = 'ticker text-center')(
+    return (Dom.div()..className = 'toast text-center')(
       'Time till ICO: '
       '${timeLeft.inDays}:'
       '${timeLeft.inHours.remainder(Duration.HOURS_PER_DAY)}:'
