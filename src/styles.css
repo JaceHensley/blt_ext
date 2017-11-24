@@ -3903,3 +3903,9 @@ body {
 .view--needs-email {
   padding: 3.2rem 1rem;
 }
+
+.reflink {
+  user-select: none;
+  white-space: nowrap;
+  overflow: scroll;
+}

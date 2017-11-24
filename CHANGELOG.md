@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- Add refferal link
+- Add message for whether or not the user is on the whitelist
+
 ## 1.1.1
 
 - Fix loading issue

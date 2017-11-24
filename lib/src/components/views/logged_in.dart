@@ -1,6 +1,7 @@
 import 'package:over_react/over_react.dart';
 
 import 'package:blt_ext/src/data.dart';
+import 'package:clippy/browser.dart' as clippy;
 
 import '../leaderboard.dart';
 
@@ -49,6 +50,10 @@ class LoggedInComponent extends UiComponent<LoggedInProps> {
       rewardMessage = 'Looks like you haven\'t contributed enough, yet. Keep going!';
     }
 
+    var whitelistMessage = props.data.peopleBehind <= 2499
+        ? 'You made it on the whitelist!!'
+        : 'Not quite on the whitelist yet, keep working! You need to be in the top 2500 people.';
+
     return (Dom.div()..className = 'card')(
       (Dom.div()..className = 'card-header')(
         (Dom.div()..className = 'card-title h5')('Current Ranking')
@@ -62,9 +67,27 @@ class LoggedInComponent extends UiComponent<LoggedInProps> {
           ' people behind you.'
         ),
         Dom.p()(
+          whitelistMessage
+        ),
+        Dom.p()(
           rewardMessage
         ),
-      )
+      ),
+      (Dom.div()..className = 'card-footer')(
+        _renderRefLink()
+      ),
     );
+  }
+
+  ReactElement _renderRefLink() {
+    return (Dom.div()
+      ..className = 'reflink c-hand form-input input-lg'
+      ..title = 'Click tp copy to clipboard'
+      ..onClick = _copyRefLinkToClipboard
+    )(props.data.referralLink);
+  }
+
+  void _copyRefLinkToClipboard(_) {
+    clippy.write(props.data.referralLink);
   }
 }

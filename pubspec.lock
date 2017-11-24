@@ -49,6 +49,12 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.2+1"
+  clippy:
+    description:
+      name: clippy
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
   collection:
     description:
       name: collection
