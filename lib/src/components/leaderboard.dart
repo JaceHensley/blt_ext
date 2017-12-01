@@ -32,12 +32,13 @@ class LeaderboardComponent extends UiComponent<LeaderboardProps> {
   }
 
   ReactElement _renderTable() {
-    return (Dom.table()..className = 'table')(
+    return (Dom.table()..className = 'table table-scroll')(
       Dom.thead()(
         Dom.tr()(
           Dom.th()('Position'),
           Dom.th()('Email'),
           Dom.th()('Points'),
+          Dom.th()('Referrals'),
         )
       ),
       Dom.tbody()(
@@ -57,6 +58,7 @@ class LeaderboardComponent extends UiComponent<LeaderboardProps> {
       Dom.td()(item.position),
       Dom.td()(item.email),
       Dom.td()(item.points),
+      Dom.td()(item.peopleReferred),
     );
   }
 }

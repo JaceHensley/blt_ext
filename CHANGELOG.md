@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+- Update to countdown till the ICO ends
+- Remove note about white list
+- Add column for referral count
+
 ## 1.2.0
 
 - Add refferal link

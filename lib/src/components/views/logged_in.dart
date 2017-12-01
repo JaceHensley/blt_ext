@@ -50,10 +50,6 @@ class LoggedInComponent extends UiComponent<LoggedInProps> {
       rewardMessage = 'Looks like you haven\'t contributed enough, yet. Keep going!';
     }
 
-    var whitelistMessage = props.data.peopleBehind <= 2499
-        ? 'You made it on the whitelist!!'
-        : 'Not quite on the whitelist yet, keep working! You need to be in the top 2500 people.';
-
     return (Dom.div()..className = 'card')(
       (Dom.div()..className = 'card-header')(
         (Dom.div()..className = 'card-title h5')('Current Ranking')
@@ -65,9 +61,6 @@ class LoggedInComponent extends UiComponent<LoggedInProps> {
           ' people ahead of you. And ',
           (Dom.strong()..className = 'text-warning')(props.data.peopleAhead),
           ' people behind you.'
-        ),
-        Dom.p()(
-          whitelistMessage
         ),
         Dom.p()(
           rewardMessage

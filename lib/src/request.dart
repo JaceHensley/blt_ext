@@ -29,11 +29,13 @@ Data sendRequest({@required String email}) {
     var position = rank['position'];
     var rankEmail = rank['email'];
     var points = rank['points'];
+    var peopleReferred = rank['people_referred'];
 
     leaderboardItems.add(new LeaderboardItem(
       position: position,
       email: rankEmail,
       points: points,
+      peopleReferred: peopleReferred,
       isSelf: rankEmail == email
     ));
   }

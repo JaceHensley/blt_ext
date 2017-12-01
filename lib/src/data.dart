@@ -12,7 +12,8 @@ class LeaderboardItem {
   final int position;
   final String email;
   final int points;
+  final int peopleReferred;
   final bool isSelf;
 
-  LeaderboardItem({this.position, this.email, this.points, this.isSelf});
+  LeaderboardItem({this.position, this.email, this.points, this.peopleReferred, this.isSelf});
 }
