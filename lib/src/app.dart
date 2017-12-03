@@ -77,6 +77,7 @@ class AppComponent extends UiStatefulComponent<AppProps, AppState> {
 
     return (Dom.div()..className = 'app')(
       view,
+      (Dom.div()..className = 'toast text-center')('Tokens Remaining: ${state.data?.remainingTokens ?? -1}'),
       Ticker()(),
     );
   }
