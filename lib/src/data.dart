@@ -4,8 +4,9 @@ class Data {
   final int peopleBehind;
   final String referralLink;
   final List<LeaderboardItem> leaderboardItems;
+  final String remainingTokens;
 
-  Data({this.email, this.peopleAhead, this.peopleBehind, this.referralLink, this.leaderboardItems});
+  Data({this.email, this.peopleAhead, this.peopleBehind, this.referralLink, this.leaderboardItems, this.remainingTokens});
 }
 
 class LeaderboardItem {
