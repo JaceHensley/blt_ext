@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+- Add remaining tokens
+
 ## 1.3.0
 
 - Update to countdown till the ICO ends
