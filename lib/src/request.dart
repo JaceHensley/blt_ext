@@ -38,14 +38,12 @@ Data sendRequest({@required String email}) {
   var referralLink = rankingData['referral_link'];
   var leaderboardItems = <LeaderboardItem>[];
 
-  // For some reason the token count comes back many orders of magnitudes off
+  // For some reason the token count comes back many orders of magnitude off
   var remainingTokens = ((int.parse(tokenData['result'])) / 1000000000000000000).toString().replaceAllMapped(new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]},');
   var decimalIndex = remainingTokens.indexOf('.');
 
-  // Pull of the decimals as no one cares about fractions of BLT
+  // Pull off the decimals as no one cares about fractions of BLT
   remainingTokens = remainingTokens.substring(0, decimalIndex);
-
-  print(remainingTokens);
 
   for (var rank in rankingData['leaderboard']['ranking']) {
     var position = rank['position'];
