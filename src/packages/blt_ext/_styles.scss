@@ -1,6 +1,8 @@
 @import "spectre.css/src/spectre";
 @import "spectre.css/src/spectre-icons";
 
+$bloom-color: #6067f1;
+
 * {
   box-sizing: border-box;
 }
@@ -9,21 +11,35 @@ body {
   width: 20rem;
 }
 
+.fa-home {
+  color: $bloom-color;
+}
+
+.fa-reddit-alien {
+  color: #ff4500;
+}
+
+.fa-slack-hash {
+  color: #6ecadc;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-medium-m {
+  color: #00ab6c;
+}
+
 .view {
   &--logged-in {
-    height: 15rem;
+    max-height: 15rem;
     overflow: scroll;
   }
 
   &--needs-email {
     padding: 3.2rem 1rem;
   }
-}
-
-.reflink {
-  user-select: none;
-  white-space: nowrap;
-  overflow: scroll;
 }
 
 

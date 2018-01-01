@@ -3,7 +3,6 @@ import 'package:over_react/over_react.dart';
 import 'package:blt_ext/src/data.dart';
 
 import 'chrome/storage.dart';
-import 'components/ticker.dart';
 import 'components/views/logged_in.dart';
 import 'components/views/needs_email.dart';
 import 'request.dart';
@@ -77,8 +76,6 @@ class AppComponent extends UiStatefulComponent<AppProps, AppState> {
 
     return (Dom.div()..className = 'app')(
       view,
-      (Dom.div()..className = 'toast text-center')('Tokens Remaining: ${state.data?.remainingTokens ?? -1}'),
-      Ticker()(),
     );
   }
 

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.0
+- Rip out token sale info
+
 ## 1.4.0
 
 - Add remaining tokens

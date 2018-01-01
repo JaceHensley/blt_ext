@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preload" href="packages/react/react_with_react_dom_prod.js?2.13.0" as="script">
+    <link rel="preload" href="/packages/blt_ext/fontawesome.js" as="script">
+
+    <script src="/packages/blt_ext/fontawesome.js"></script>
+    <script src="/packages/react/react_with_react_dom_prod.js"></script>
   </head>
   <body>
     <div id="entry-point"></div>
-
-    <script src="/packages/react/react.js"></script>
-    <script src="/packages/react/react_dom.js"></script>
 
     <script type="application/dart" src="/popup.dart"></script>
     <script src="/packages/browser/dart.js"></script>
