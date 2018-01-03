@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.0
+- Update to use Bloom logo.
+
 ## 2.0.0
 - Rip out token sale info
 
